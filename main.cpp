@@ -64,7 +64,7 @@ void sample_thread() {
     for (i = 0; i < sample; i++){
         // Aout = Ain;
         ADCdata[i] = Ain;
-        ThisThread::sleep_for(1000ms/sample); // sampling rate = 500/s 實際55/s
+        ThisThread::sleep_for(1000ms/sample); // sampling rate = 500/s
     }
     sampling = 0;
     //t.stop();
