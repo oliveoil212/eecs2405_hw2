@@ -67,12 +67,9 @@ void sample_thread() {
         ThisThread::sleep_for(1000ms/sample); // sampling rate = 500/s
     }
     sampling = 0;
-    //t.stop();
-    //auto ms = chrono::duration_cast<chrono::milliseconds>(t.elapsed_time()).count();
     for (i = 0; i < sample; i++) {
         printf("%f\r\n", ADCdata[i]);
     }
-    //printf ("Timer time: %llu ms\n", ms);
 }
 int main() {
     uLCD.reset();
